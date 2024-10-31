@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from skimage.draw import disk
 import random
+import sys
 
 def generate_synthetic_image(width, height, num_cells, fluorescence_level_range, size_range, shape='disk', noise_level=0.1):
     # Create an empty fluorescence image
@@ -30,11 +31,36 @@ def generate_synthetic_image(width, height, num_cells, fluorescence_level_range,
     return fluorescence_image, labeled_image
 
 # Parameters
-width = 128
-height = 128
-num_cells = 9
-fluorescence_level_range = (500, 2500)
-size_range = (5, 15)
+
+import argparse
+
+# Initialize the argument parser
+parser = argparse.ArgumentParser(description="Generate synthetic image parameters.")
+
+# Define command-line arguments with both positional and named options
+parser.add_argument("--width", type=int, required=True, help="Width of the image")
+parser.add_argument("--height", type=int, required=True, help="Height of the image")
+parser.add_argument("--num_cells", type=int, required=True, help="Number of cells")
+parser.add_argument("--fluorescence_level_range", type=int, nargs=2, required=True, 
+                    help="Fluorescence level range as two values: min max")
+parser.add_argument("--size_range", type=int, nargs=2, required=True, help="Cell size range as two values: min max")
+
+# Parse the arguments
+args = parser.parse_args()
+
+# Assign arguments to variables
+width = args.width
+height = args.height
+num_cells = args.num_cells
+fluorescence_level_range = tuple(args.fluorescence_level_range)
+size_range = tuple(args.size_range)
+
+# Print to verify
+print("Width:", width)
+print("Height:", height)
+print("Number of cells:", num_cells)
+print("Fluorescence level range:", fluorescence_level_range)
+print("Size range:", size_range)
 
 # Generate synthetic images
 fluorescence_image, labeled_image = generate_synthetic_image(width, height, num_cells, fluorescence_level_range, size_range)
