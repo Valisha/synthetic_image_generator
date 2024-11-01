@@ -5,6 +5,8 @@
 This repository has two scripts, one in python and another in matlab. (Python script is tested)
 The function in the scripts are aimed to produce a synthetic flourescence image using the image descriptives as input and another labeled flourescent image. 
 
+## Description of the main function
+
 The main function takes several inputs which are to be provided by the user using command line 
 Inputs - 
 1. width 128 (numerical input)
@@ -20,6 +22,12 @@ For this script I have used the functions -
 3. skimage.draw - Used to generate coordinates within a circle<sup>[3]</sup>
 4. random
 5. sys
+
+## Additional factors that can affect a flourescence microscopy image 
+
+1. <b>Photbleaching</b> - over time a flourescence microscopy image might loose intensity, due to flurophores being destroyed or losing their ability to fluroesce after prolonged exposure to the light.
+2. 
+
 
 ## References 
 1. Harris, C. R., Millman, K. J., van der Walt, S. J., Gommers, R., Virtanen, P., Cournapeau, D., & Oliphant, T. E. (2020). Array programming with NumPy. Nature, 585(7825), 357-362. DOI: 10.1038/s41586-020-2649-2
