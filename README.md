@@ -16,7 +16,7 @@ Inputs -
 5. size_range 10 20 (range of values for the random generator to choose the size of the cell)
 
 
-For this script I have used the functions - 
+For this script I have used the libraries - 
 1. numpy<sup>[1]</sup>
 2. matplotlib.pyplot<sup>[2]</sup>
 3. skimage.draw - Used to generate coordinates within a circle<sup>[3]</sup>
@@ -29,7 +29,7 @@ For this script I have used the functions -
 2. <b>Autoflouresce</b> - background flourescence from the preparation liquid or leakage. This can again be overcome by treating with relative flourescence and keeping a threshold of difference in the flourescence of the detected cell and the background flouresence if any.
 3. <b>Optical Aberrations</b> - Imperfections in the imaging system, such as spherical or chromatic abberations, can cause blurring or distortions in the image, affecting its clariy and detail. This can be overcome by locating the center of the cell, and creating a probable circular cell using the radius and camera noise
 
-*PS - I do know how to code in MATLAB, but Python is what I am most comfortable. So, I was able to completely test the Python code and make changes, and convert the same code to a matlab code. But, I did not have enough time to completely test the matlab code*
+*PS - I am more comfortable so, I was able to completely test the Python code and make changes, and convert the same code to a matlab code. But, I did not have enough time to completely test the matlab code*
 
 ## References 
 1. Harris, C. R., Millman, K. J., van der Walt, S. J., Gommers, R., Virtanen, P., Cournapeau, D., & Oliphant, T. E. (2020). Array programming with NumPy. Nature, 585(7825), 357-362. DOI: 10.1038/s41586-020-2649-2
