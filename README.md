@@ -25,8 +25,9 @@ For this script I have used the functions -
 
 ## Additional factors that can affect a flourescence microscopy image 
 
-1. <b>Photbleaching</b> - over time a flourescence microscopy image might loose intensity, due to flurophores being destroyed or losing their ability to fluroesce after prolonged exposure to the light.
-2. 
+1. <b>Photbleaching</b> - over time a flourescence microscopy image might loose intensity, due to flurophores being destroyed or losing their ability to fluroesce after prolonged exposure to the light. This can be corrected by relative flourescence effect. We can take into account how old the image, and set the flouresence threshold according to that. and also, consider relative flourescence in reference to the background
+2. <b>Autoflouresce</b> - background flourescence from the preparation liquid or leakage. This can again be overcome by treating with relative flourescence and keeping a threshold of difference in the flourescence of the detected cell and the background flouresence if any.
+3. <b>Optical Aberrations</b> - Imperfections in the imaging system, such as spherical or chromatic abberations, can cause blurring or distortions in the image, affecting its clariy and detail. This can be overcome by locating the center of the cell, and creating a probable circular cell using the radius and camera noise
 
 
 ## References 
