@@ -16,10 +16,10 @@ Inputs -
 
 For this script I have used the functions - 
 1. numpy<sup>[1]</sup>
-2. matplotlib.pyplot<[2]>
-3. skimage.draw - Used to generate coordinates within a circle<[3]>
-4. random<[4]>
-5. sys<[5]>
+2. matplotlib.pyplot<sup>[2]</sup>
+3. skimage.draw - Used to generate coordinates within a circle<sup>[3]</sup>
+4. random
+5. sys
 
 ## References 
 1. Harris, C. R., Millman, K. J., van der Walt, S. J., Gommers, R., Virtanen, P., Cournapeau, D., & Oliphant, T. E. (2020). Array programming with NumPy. Nature, 585(7825), 357-362. DOI: 10.1038/s41586-020-2649-2
