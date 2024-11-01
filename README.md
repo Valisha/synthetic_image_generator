@@ -15,7 +15,7 @@ Inputs -
 
 
 For this script I have used the functions - 
-1. numpy<[1]>
+1. numpy<sup>[1]</sup>
 2. matplotlib.pyplot<[2]>
 3. skimage.draw - Used to generate coordinates within a circle<[3]>
 4. random<[4]>
