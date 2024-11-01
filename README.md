@@ -2,7 +2,7 @@
 ### Author - Valisha Shah 
 ### Date - 11/01/2024
 
-This repository has two scripts, one in python and another in matlab in the final_script folder. (Python script is tested)
+This repository has two scripts in the final_scripts directory, one in python and another in matlab in the final_script folder. (Python script is tested)
 The function in the scripts are aimed to produce a synthetic flourescence image using the image descriptives as input and another labeled flourescent image. 
 
 ## Description of the main function
@@ -30,6 +30,11 @@ For this script I have used the libraries -
 3. <b>Optical Aberrations</b> - Imperfections in the imaging system, such as spherical or chromatic abberations, can cause blurring or distortions in the image, affecting its clariy and detail. This can be overcome by locating the center of the cell, and creating a probable circular cell using the radius and camera noise
 
 *PS - I am more comfortable so, I was able to completely test the Python code and make changes, and convert the same code to a matlab code. But, I did not have enough time to completely test the matlab code*
+
+## Experience doing this project
+I really enjoyed working on this project. It was initially challenging because I had to grasp the specific requirements. However, once I understood what was needed and which libraries I could use, it became much easier. 
+It might have been a bit more difficult if there had been an additional task to read an input fluorescence image and generate a labeled image from it. 
+While I have some experience in this area, I haven’t tackled a project like this that required me to write a function to create synthetic images. It’s an exciting concept, and it has sparked several ideas for implementation in my current projects.
 
 ## References 
 1. Harris, C. R., Millman, K. J., van der Walt, S. J., Gommers, R., Virtanen, P., Cournapeau, D., & Oliphant, T. E. (2020). Array programming with NumPy. Nature, 585(7825), 357-362. DOI: 10.1038/s41586-020-2649-2
